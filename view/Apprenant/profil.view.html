@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Profil - CaisseClasse</title>
+</head>
+<body class="min-h-screen bg-[#f4f4f4] text-neutral-900">
+  <header class="border-b border-neutral-300 bg-white">
+    <div class="mx-auto flex max-w-[1024px] items-stretch justify-between px-4">
+      <div class="flex items-center gap-10">
+        <a href="dashboard.view.html" class="py-4 text-xl font-extrabold tracking-tight text-indigo-800">CaisseClasse</a>
+        <nav class="hidden items-stretch gap-7 md:flex">
+          <a href="dashboard.view.html" class="relative px-2 py-4 text-sm text-neutral-500 hover:text-neutral-700">Dashboard</a>
+          <a href="cotisations.view.html" class="relative px-2 py-4 text-sm text-neutral-500 hover:text-neutral-700">Cotisations</a>
+          <a href="historique.view.html" class="relative px-2 py-4 text-sm text-neutral-500 hover:text-neutral-700">Historique</a>
+          <a href="notifications.view.html" class="relative px-2 py-4 text-sm text-neutral-500 hover:text-neutral-700">Notifications</a>
+          <a href="profil.view.html" class="relative px-2 py-4 text-sm text-indigo-800 font-semibold">Profil<span class="absolute left-0 -bottom-px h-0.5 w-full bg-indigo-700"></span></a>
+        </nav>
+      </div>
+      <div class="flex items-center">
+        <a href="login.view.html" class="py-4 text-sm text-neutral-500 hover:text-neutral-700">Déconnexion</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="mx-auto max-w-[1024px] px-4 py-8">
+    <section class="mb-4">
+      <h1 class="text-2xl font-extrabold text-neutral-800">Profil</h1>
+      <p class="mt-1 text-[15px] text-neutral-500">Informations de votre compte apprenant</p>
+    </section>
+
+    <div class="grid gap-6 lg:grid-cols-[320px_1fr]">
+      <div class="rounded-lg border border-neutral-300 bg-white p-6 shadow-sm">
+        <div class="flex items-center gap-4">
+          <div class="flex h-16 w-16 items-center justify-center rounded-full bg-indigo-100 text-xl font-bold text-indigo-800">F</div>
+          <div>
+            <h2 class="text-[17px] font-bold text-neutral-800">Fatoumata Binetou</h2>
+            <p class="text-[15px] text-neutral-400">Apprenant — Classe CA-2024</p>
+          </div>
+        </div>
+        <div class="mt-6 space-y-3 text-[15px] text-neutral-500">
+          <p>Email : fatoumata@email.com</p>
+          <p>Téléphone : 77-201-54-03</p>
+          <p>Code classe : CA-2024</p>
+        </div>
+      </div>
+
+      <div class="rounded-lg border border-neutral-300 bg-white p-6 shadow-sm">
+        <h2 class="text-[17px] font-bold text-neutral-800">Résumé</h2>
+        <div class="mt-4 grid gap-4 md:grid-cols-3">
+          <div class="rounded-lg border border-neutral-300 bg-emerald-50 p-4">
+            <div class="text-sm text-neutral-400">Semaines payées</div>
+            <div class="mt-1 text-[28px] font-bold text-neutral-800">10 / 12</div>
+          </div>
+          <div class="rounded-lg border border-neutral-300 bg-white p-4">
+            <div class="text-sm text-neutral-400">Total versé</div>
+            <div class="mt-1 text-[28px] font-bold text-neutral-800">50 000 F</div>
+          </div>
+          <div class="rounded-lg border border-neutral-300 bg-white p-4">
+            <div class="text-sm text-neutral-400">Statut</div>
+            <div class="mt-1 text-[28px] font-bold text-green-700">À jour</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

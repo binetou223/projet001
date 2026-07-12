@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Historique - CaisseClasse</title>
+</head>
+<body class="min-h-screen bg-[#f4f4f4] text-neutral-900">
+  <header class="border-b border-neutral-300 bg-white">
+    <div class="mx-auto flex max-w-[1024px] items-stretch justify-between px-4">
+      <div class="flex items-center gap-10">
+        <a href="dashboard.view.html" class="py-4 text-xl font-extrabold tracking-tight text-indigo-800">CaisseClasse</a>
+        <nav class="hidden items-stretch gap-7 md:flex">
+          <a href="dashboard.view.html" class="relative px-2 py-4 text-sm text-neutral-500 hover:text-neutral-700">Dashboard</a>
+          <a href="cotisations.view.html" class="relative px-2 py-4 text-sm text-neutral-500 hover:text-neutral-700">Cotisations</a>
+          <a href="historique.view.html" class="relative px-2 py-4 text-sm text-indigo-800 font-semibold">Historique<span class="absolute left-0 -bottom-px h-0.5 w-full bg-indigo-700"></span></a>
+          <a href="notifications.view.html" class="relative px-2 py-4 text-sm text-neutral-500 hover:text-neutral-700">Notifications</a>
+          <a href="profil.view.html" class="relative px-2 py-4 text-sm text-neutral-500 hover:text-neutral-700">Profil</a>
+        </nav>
+      </div>
+      <div class="flex items-center">
+        <a href="login.view.html" class="py-4 text-sm text-neutral-500 hover:text-neutral-700">Déconnexion</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="mx-auto max-w-[1024px] px-4 py-8">
+    <section class="mb-4">
+      <h1 class="text-2xl font-extrabold text-neutral-800">Historique</h1>
+      <p class="mt-1 text-[15px] text-neutral-500">Liste statique de vos paiements passés</p>
+    </section>
+
+    <div class="overflow-hidden rounded-lg border border-neutral-300 bg-white">
+      <table class="w-full border-collapse">
+        <thead class="bg-neutral-100 text-left text-[14px] text-neutral-400">
+          <tr>
+            <th class="px-4 py-3 font-medium">Date</th>
+            <th class="px-4 py-3 font-medium">Semaine</th>
+            <th class="px-4 py-3 font-medium">Montant</th>
+            <th class="px-4 py-3 font-medium">Type</th>
+            <th class="px-4 py-3 font-medium">Statut</th>
+          </tr>
+        </thead>
+        <tbody class="text-neutral-700">
+          <tr class="border-b border-neutral-300"><td class="px-4 py-3 text-[15px]">12/03/2026</td><td class="px-4 py-3 text-[15px]">Semaine 10</td><td class="px-4 py-3 text-[15px]">5 000 F</td><td class="px-4 py-3 text-[15px]">Hebdo</td><td class="px-4 py-3 text-[15px]"><span class="text-green-700">Payée</span></td></tr>
+          <tr class="border-b border-neutral-300"><td class="px-4 py-3 text-[15px]">05/03/2026</td><td class="px-4 py-3 text-[15px]">Semaine 9</td><td class="px-4 py-3 text-[15px]">5 000 F</td><td class="px-4 py-3 text-[15px]">Hebdo</td><td class="px-4 py-3 text-[15px]"><span class="text-green-700">Payée</span></td></tr>
+          <tr class="border-b border-neutral-300"><td class="px-4 py-3 text-[15px]">28/02/2026</td><td class="px-4 py-3 text-[15px]">Anniversaire</td><td class="px-4 py-3 text-[15px]">1 000 F</td><td class="px-4 py-3 text-[15px]">Ponctuel</td><td class="px-4 py-3 text-[15px]"><span class="text-green-700">Payée</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</body>
+</html>

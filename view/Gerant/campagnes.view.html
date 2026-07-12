@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Campagnes - CaisseClasse</title>
+</head>
+<body class="min-h-screen bg-[#f4f4f4] text-neutral-900">
+  <header class="border-b border-neutral-300 bg-[#efefef]">
+    <div class="mx-auto flex max-w-[1024px] items-stretch justify-between px-4">
+      <div class="flex items-center gap-10">
+        <a href="dashboard.view.html" class="py-4 text-xl font-extrabold tracking-tight text-indigo-800">CaisseClasse</a>
+        <nav class="hidden items-stretch gap-7 md:flex">
+          <a href="dashboard.view.html" class="relative px-2 py-4 text-sm text-neutral-500 hover:text-neutral-700">Dashboard</a>
+          <a href="paiements.view.html" class="relative px-2 py-4 text-sm text-neutral-500 hover:text-neutral-700">Paiements</a>
+          <a href="campagnes.view.html" class="relative px-2 py-4 text-sm text-indigo-800 font-semibold">Campagnes<span class="absolute left-0 -bottom-px h-0.5 w-full bg-indigo-700"></span></a>
+          <a href="apprenants.view.html" class="relative px-2 py-4 text-sm text-neutral-500 hover:text-neutral-700">Apprenants</a>
+          <a href="retards.view.html" class="relative px-2 py-4 text-sm text-neutral-500 hover:text-neutral-700">Retards</a>
+        </nav>
+      </div>
+      <div class="flex items-center"><a href="login.view.html" class="py-4 text-sm text-neutral-500 hover:text-neutral-700">Déconnexion</a></div>
+    </div>
+  </header>
+  <main class="mx-auto max-w-[1024px] px-4 py-8">
+    <div class="mb-6 flex items-center justify-between">
+      <h1 class="text-2xl font-extrabold text-neutral-800">Campagnes</h1>
+      <a href="nouvelle-campagne.view.html" class="rounded-md bg-indigo-800 px-5 py-3 font-semibold text-white">+ Nouvelle campagne</a>
+    </div>
+    <div class="overflow-hidden rounded-none bg-white">
+      <table class="w-full border-collapse">
+        <thead class="border-b border-neutral-300 text-left text-[14px]">
+          <tr>
+            <th class="py-3 pr-4 font-semibold">Titre</th>
+            <th class="py-3 pr-4 font-semibold">Montant/pers</th>
+            <th class="py-3 pr-4 font-semibold">Statut</th>
+            <th class="py-3 pr-4 font-semibold">Collecté</th>
+          </tr>
+        </thead>
+        <tbody class="text-neutral-700">
+          <tr class="border-b border-neutral-300"><td class="px-3 py-3 text-[15px]">Anniversaire Mars</td><td class="px-3 py-3 text-[15px]">1 000 F</td><td class="px-3 py-3 text-[15px]">En cours</td><td class="px-3 py-3 text-[15px]">18 000 / 32 000 F</td></tr>
+          <tr class="border-b border-neutral-300"><td class="px-3 py-3 text-[15px]">Décès famille Diop</td><td class="px-3 py-3 text-[15px]">2 000 F</td><td class="px-3 py-3 text-[15px]">Terminée</td><td class="px-3 py-3 text-[15px]">64 000 / 64 000 F</td></tr>
+          <tr class="border-b border-neutral-300"><td class="px-3 py-3 text-[15px]">Anniversaire Fév</td><td class="px-3 py-3 text-[15px]">1 000 F</td><td class="px-3 py-3 text-[15px]">Terminée</td><td class="px-3 py-3 text-[15px]">32 000 / 32 000 F</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</body>
+</html>

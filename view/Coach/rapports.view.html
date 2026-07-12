@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Rapports - CaisseClasse</title>
+</head>
+<body class="min-h-screen bg-[#f4f4f4] text-neutral-900">
+  <header class="border-b border-neutral-300 bg-white">
+    <div class="mx-auto flex max-w-[1024px] items-stretch justify-between px-4">
+      <div class="flex items-center gap-10">
+        <a href="dashboard.view.html" class="py-4 text-xl font-extrabold tracking-tight text-indigo-800">CaisseClasse</a>
+        <nav class="hidden items-stretch gap-7 md:flex">
+          <a href="dashboard.view.html" class="relative px-2 py-4 text-sm text-neutral-400 hover:text-neutral-700">Dashboard</a>
+          <a href="statistiques.view.html" class="relative px-2 py-4 text-sm text-neutral-400 hover:text-neutral-700">Statistiques</a>
+          <a href="audit.view.html" class="relative px-2 py-4 text-sm text-neutral-400 hover:text-neutral-700">Audit</a>
+          <a href="apprenants.view.html" class="relative px-2 py-4 text-sm text-neutral-400 hover:text-neutral-700">Apprenants</a>
+          <a href="rapports.view.html" class="relative px-2 py-4 text-sm font-semibold text-indigo-800">Rapports<span class="absolute left-0 -bottom-px h-0.5 w-full bg-indigo-700"></span></a>
+        </nav>
+      </div>
+      <div class="flex items-center">
+        <a href="login.view.html" class="py-4 text-sm text-neutral-400 hover:text-neutral-700">Déconnexion</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="mx-auto max-w-[1024px] px-4 py-8">
+    <section class="mb-4">
+      <h1 class="text-2xl font-extrabold text-neutral-800">Rapports</h1>
+      <p class="mt-1 text-[15px] text-neutral-400">Exports et synthèses en lecture seule</p>
+    </section>
+
+    <div class="grid gap-6 md:grid-cols-3">
+      <div class="rounded-lg border border-neutral-300 bg-white p-4 shadow-sm">
+        <div class="text-[14px] text-neutral-400">PDF générés</div>
+        <div class="mt-1 text-[28px] font-bold text-neutral-800">12</div>
+      </div>
+      <div class="rounded-lg border border-neutral-300 bg-white p-4 shadow-sm">
+        <div class="text-[14px] text-neutral-400">Exports Excel</div>
+        <div class="mt-1 text-[28px] font-bold text-neutral-800">8</div>
+      </div>
+      <div class="rounded-lg border border-neutral-300 bg-white p-4 shadow-sm">
+        <div class="text-[14px] text-neutral-400">Rapports mensuels</div>
+        <div class="mt-1 text-[28px] font-bold text-neutral-800">4</div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

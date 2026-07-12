@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Dashboard - CaisseClasse</title>
+</head>
+<body class="min-h-screen bg-[#f4f4f4] text-neutral-900">
+  <header class="border-b border-neutral-300 bg-white">
+    <div class="mx-auto flex max-w-[1024px] items-stretch justify-between px-4">
+      <div class="flex items-center gap-10">
+        <a href="dashboard.view.html" class="py-4 text-xl font-extrabold tracking-tight text-indigo-800">CaisseClasse</a>
+        <nav class="hidden items-stretch gap-7 md:flex">
+          <a href="dashboard.view.html" class="relative px-2 py-4 text-sm font-semibold text-indigo-800">Dashboard<span class="absolute left-0 -bottom-px h-0.5 w-full bg-indigo-700"></span></a>
+          <a href="cotisations.view.html" class="relative px-2 py-4 text-sm text-neutral-400 hover:text-neutral-700">Cotisations</a>
+          <a href="historique.view.html" class="relative px-2 py-4 text-sm text-neutral-400 hover:text-neutral-700">Historique</a>
+          <a href="notifications.view.html" class="relative px-2 py-4 text-sm text-neutral-400 hover:text-neutral-700">Notifications</a>
+          <a href="profil.view.html" class="relative px-2 py-4 text-sm text-neutral-400 hover:text-neutral-700">Profil</a>
+        </nav>
+      </div>
+      <div class="flex items-center">
+        <a href="login.view.html" class="py-4 text-sm text-neutral-400 hover:text-neutral-700">Déconnexion</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="mx-auto max-w-[1024px] px-4 py-8">
+    <section class="mb-4">
+      <h1 class="text-2xl font-extrabold text-neutral-800">Bonjour Fatoumata Binetou 👋</h1>
+      <p class="mt-1 text-[15px] text-neutral-400">Apprenant — Classe CA-2024</p>
+    </section>
+
+    <section class="grid gap-6 md:grid-cols-2">
+      <div class="rounded-lg border border-neutral-300 bg-[#ecf7e9] p-4 shadow-sm">
+        <div class="text-[14px] text-neutral-400">Semaines payées</div>
+        <div class="mt-1 text-[28px] font-bold text-neutral-800">10 / 12</div>
+      </div>
+      <div class="rounded-lg border border-neutral-300 bg-white p-4 shadow-sm">
+        <div class="text-[14px] text-neutral-400">Total payé</div>
+        <div class="mt-1 text-[28px] font-bold text-neutral-800">50 000 F</div>
+      </div>
+    </section>
+
+    <div class="mt-6 rounded-lg border border-orange-500 bg-[#fff7ef] px-4 py-3 text-[15px] text-orange-600">
+      <span class="font-semibold">⚠ Retard semaine 11</span> — veuillez payer avant samedi
+    </div>
+
+    <section class="mt-6 grid gap-6 lg:grid-cols-[1fr_240px]">
+      <div class="overflow-hidden rounded-lg border border-neutral-300 bg-white shadow-sm">
+        <div class="border-b border-neutral-300 px-4 py-4">
+          <h2 class="text-[18px] font-bold text-neutral-800">Mes derniers paiements</h2>
+        </div>
+        <table class="w-full border-collapse">
+          <thead class="bg-neutral-100 text-left text-[14px] text-neutral-400">
+            <tr>
+              <th class="px-4 py-3 font-medium">Semaine</th>
+              <th class="px-4 py-3 font-medium">Type</th>
+              <th class="px-4 py-3 font-medium">Montant</th>
+              <th class="px-4 py-3 font-medium">Date</th>
+              <th class="px-4 py-3 font-medium">Statut</th>
+            </tr>
+          </thead>
+          <tbody class="text-neutral-700">
+            <tr class="border-b border-neutral-300"><td class="px-4 py-3 text-[15px]">S10</td><td class="px-4 py-3 text-[15px] text-neutral-400">Hebdo</td><td class="px-4 py-3 text-[15px]">5 000 F</td><td class="px-4 py-3 text-[15px] text-neutral-400">12/03</td><td class="px-4 py-3 text-[15px] text-green-700">Payée ✓</td></tr>
+            <tr class="border-b border-neutral-300"><td class="px-4 py-3 text-[15px]">S9</td><td class="px-4 py-3 text-[15px] text-neutral-400">Hebdo</td><td class="px-4 py-3 text-[15px]">5 000 F</td><td class="px-4 py-3 text-[15px] text-neutral-400">05/03</td><td class="px-4 py-3 text-[15px] text-green-700">Payée ✓</td></tr>
+            <tr class="border-b border-neutral-300"><td class="px-4 py-3 text-[15px]">Anniv.</td><td class="px-4 py-3 text-[15px] text-neutral-400">Anniversaire</td><td class="px-4 py-3 text-[15px]">1 000 F</td><td class="px-4 py-3 text-[15px] text-neutral-400">28/02</td><td class="px-4 py-3 text-[15px] text-green-700">Payée ✓</td></tr>
+            <tr class="border-b border-neutral-300"><td class="px-4 py-3 text-[15px]">S8</td><td class="px-4 py-3 text-[15px] text-neutral-400">Hebdo</td><td class="px-4 py-3 text-[15px]">5 000 F</td><td class="px-4 py-3 text-[15px] text-neutral-400">26/02</td><td class="px-4 py-3 text-[15px] text-green-700">Payée ✓</td></tr>
+            <tr class="border-b border-neutral-300"><td class="px-4 py-3 text-[15px]">S11</td><td class="px-4 py-3 text-[15px] text-neutral-400">Hebdo</td><td class="px-4 py-3 text-[15px]">5 000 F</td><td class="px-4 py-3 text-[15px] text-neutral-400">—</td><td class="px-4 py-3 text-[15px] text-orange-600">Non payée</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="space-y-6">
+        <div class="overflow-hidden rounded-lg border border-neutral-300 bg-white shadow-sm">
+          <div class="border-b border-neutral-300 px-4 py-4">
+            <h3 class="text-[17px] font-bold text-neutral-800">Campagne en cours</h3>
+          </div>
+          <div class="px-4 py-4">
+            <h4 class="text-[16px] font-medium text-neutral-800">Anniversaire Mars</h4>
+            <p class="mt-1 text-[15px] text-neutral-400">1 000 F par personne</p>
+            <p class="mt-2 text-[15px] text-orange-500">Statut: Non payée</p>
+          </div>
+        </div>
+
+        <div class="overflow-hidden rounded-lg border border-neutral-300 bg-white shadow-sm">
+          <div class="border-b border-neutral-300 px-4 py-4">
+            <h3 class="text-[17px] font-bold text-neutral-800">Ma classe</h3>
+          </div>
+          <div class="space-y-2 px-4 py-4 text-[15px] text-neutral-400">
+            <p>Classe: CA-2024</p>
+            <p>Cotisation: 5 000 F/sem.</p>
+            <p>Gérant: Moussa Diop</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
